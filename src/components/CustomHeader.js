@@ -1,4 +1,5 @@
 import logo from '../../src/logo.svg';
+import CustomButton from './CustomButton';
 
 export default function CustomHeader() {
   const menuItems = [
@@ -18,9 +19,15 @@ export default function CustomHeader() {
           <ul className="menu-list">
             {menuItems.map((item, index) => (
               <li key={index}>
-                <a className={item.active ? 'active' : ''} href={item.href} aria-current={item.active ? 'page' : undefined}>
+                {/* <a className={item.active ? 'active' : ''} href={item.href} aria-current={item.active ? 'page' : undefined}>
                   {item.name}
-                </a>
+                </a> */}
+                <CustomButton
+                  class={item.active ? 'active' : ''}
+                  to={item.href}
+                  text={item.name}>
+
+                </CustomButton>
               </li>
             ))}
           </ul>
