@@ -10,7 +10,6 @@ export default function CustomHeader() {
     { name: 'Order Online', href: '/orderonline', active: false },
     { name: 'Login', href: '/login', active: false }
   ];
-
   return (
     <>
       <header>
