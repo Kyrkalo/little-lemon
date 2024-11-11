@@ -10,7 +10,7 @@ export default function CustomHeader() {
     { name: 'Order Online', href: '/orderonline', active: false },
     { name: 'Login', href: '/login', active: false }
   ];
-  
+
   return (
     <>
       <header>
@@ -18,12 +18,9 @@ export default function CustomHeader() {
         <nav>
           <ul className="menu-list">
             {menuItems.map((item, index) => (
-              <li key={index}>
-                {/* <a className={item.active ? 'active' : ''} href={item.href} aria-current={item.active ? 'page' : undefined}>
-                  {item.name}
-                </a> */}
+              <li key={item.name}>
                 <CustomButton
-                  class={item.active ? 'active' : ''}
+                  className={item.active ? 'active' : ''}
                   to={item.href}
                   text={item.name}>
 
