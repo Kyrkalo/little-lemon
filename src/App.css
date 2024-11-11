@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -29,6 +31,44 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.article {
+  display: flex;
+}
+.item-article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  >div{
+    width: 60%;
+    >img {
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      height: 200px;
+      object-fit: cover;
+      order: -1;
+      width: 100%;
+    }
+  }
+}
+.title-article {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+  >span {
+    color: #ee9972;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  >h3{
+    font-family: Markazi Text;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 }
 
@@ -66,11 +106,6 @@ header {
 .section-content>div{
   width: 80%;
 }
-/* .section-content > div {
-  display: flex;
-  flex-direction: column;
-  color: white;
-} */
  .button-wrap {
   text-align: -webkit-center;
   margin-top: 45px;
@@ -90,11 +125,12 @@ header {
   font-weight: 400;
   margin-top: 0;
 }
-.section-content>div>span {
+.section-content>div>span {  
   color: #fff;
   font-family: Karla,sans-serif;
   font-size: 22px;
-  width: 350px;
+  display: inline-block;
+  width: 400px;
 }
 .button-yel {
   align-items: center;
@@ -124,4 +160,26 @@ header {
   height: 400px;
   margin: 50px;
   border-radius: 50px;
+}
+
+.section-header {
+  display: flex;
+  margin: 50px;
+  justify-content: space-between;
+  >h1{
+    font-family: Markazi Text;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: .8;
+    margin: 0;
+  }
+}
+
+.text-article {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  height: 3.6em;
+  overflow: hidden;
+  width: 100%;
 }

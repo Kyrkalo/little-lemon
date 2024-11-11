@@ -5,12 +5,12 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <CustomHeader></CustomHeader>
-        <MainSection></MainSection>
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+          <CustomHeader></CustomHeader>
+          <MainSection></MainSection>
+      </BrowserRouter>
+    </div>
   );
 }
 
