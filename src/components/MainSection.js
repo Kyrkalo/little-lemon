@@ -1,5 +1,7 @@
 import restaurant from '../assets/restaurant.jpg';
 import greeksalad from '../assets/greeksalad.jpg';
+import bruchetta from '../assets/bruchetta.svg';
+import lemondessert from '../assets/lemondessert.jpeg'
 import CustomButton from './CustomButton';
 import CustomeSection from './CustomSection';
 import SectionContent from './SectionContent';
@@ -7,8 +9,8 @@ import SectionContent from './SectionContent';
 export default function MainSection() {
     const articles = [
         {image: greeksalad, title: "Greek Salad", price: "$12.99", text: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese,..."},
-        {image: greeksalad, title: "Bruchetta", price: "$5.99", text: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned,..."},
-        {image: greeksalad, title: "Lemon Dessert", price: "$12.99", text: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and i,..."}
+        {image: bruchetta, title: "Bruchetta", price: "$5.99", text: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned,..."},
+        {image: lemondessert, title: "Lemon Dessert", price: "$12.99", text: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and i,..."}
     ];
     return(
         <div>
