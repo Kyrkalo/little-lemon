@@ -6,7 +6,7 @@ export default function CustomHeader() {
     { name: 'Home', href: '/', active: true },
     { name: 'About', href: '/about', active: false },
     { name: 'Menu', href: '/menu', active: false },
-    { name: 'Reservations', href: '/bookings', active: false },
+    { name: 'Reservations', href: '/booking', active: false },
     { name: 'Order Online', href: '/orderonline', active: false },
     { name: 'Login', href: '/login', active: false }
   ];
